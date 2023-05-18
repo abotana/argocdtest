@@ -7,3 +7,9 @@ spec:
   - httpbin.example.com
   gateways:
     - httpbin-gateway
+http:
+  - route:
+    - destination:
+        host: simple-service.argocdtest.svc.cluster.local
+        port:
+          number: 80
